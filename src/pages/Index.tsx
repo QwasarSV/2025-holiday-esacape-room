@@ -13,7 +13,7 @@ const RIDDLES = {
   question3: "Begin where commands guide you through frosty paths. A hidden trail leads to a deeper challenge; finish the test, and the next message will emerge.",
   question4: "A thousand buttons rest in the archives. One shifts its color when you draw near.\n\nIf the blizzard feels endless, try some ice dust; the secret lies close by.",
   question5: "A wintery chatbot waits, the Wizard of address keeping. It won't give up its secret easily; only those who ask the right question will hear the hidden message.",
-  question6: "The clock tower keeps time even in the deepest winter. A distant recording echoes through its halls; follow the link, listen closely, and let the sound reveal its message once it's turned in reverse. ALL CAPS answer.",
+  question6: "The clock tower keeps time even in the deepest winter. A distant recording echoes through its halls; follow the link, listen closely, and let the sound reveal its message once it's turned in reverse.",
   question7: "The stable hides its secret from those traveling heavy paths. Visit on a smaller device,\n\nand a message in a different color will finally step into the light.",
   question8: "On the snowy path ahead lies a strange, frozen string. A nearby note reads, \"64 reindeer eat 64 carrots.\" Use this hint to thaw the symbols and transform them—and the hidden message will reveal itself.",
   question9: "Beyond the snowy Village page lies a trail to a distant chatbot source code; but first, you must follow the commits. In the repository's messages is a hidden clue.",

@@ -12,15 +12,15 @@ export const hashAnswer = (answer: string): string => {
 
 // Pre-computed hashes for the answers
 export const ANSWER_HASHES = {
-  question1: "-pf2tqc", // SNOWFLAKE
-  question2: "1lrklv",  // CAROL
-  question3: "1ygp39sy", // BINARY BLIZZARD
-  question4: "-h7zj3i", // CLAUSECODE
-  question5: "-q5xmxs", // DEBUGGLE
-  question6: "2n4jc",   // NOEL
-  question7: "-1b60nva", // YEAR OF THE HORSE
-  question8: "1mpk28",  // EGGNOG
-  question9: "-swxgze"  // PAKHLAVA
+  question1: "-pg0jwu", // SNOWFLAKE
+  question2: "121gnl", // CAROL
+  question3: "ohprv7", // BINARY BLIZZARD
+  question4: "wnrx7g", // CLAUSECODE
+  question5: "m03xm5", // DEBUGGLE
+  question6: "1fh9k", // NOEL
+  question7: "-eji09k", // YEAR OF THE HORSE
+  question8: "xsgb6p", // EGGNOG
+  question9: "t3wm3y" // PAKHLAVA
 };
 
 export const checkAnswer = (userAnswer: string, questionKey: keyof typeof ANSWER_HASHES): boolean => {
