@@ -13,7 +13,14 @@ export const hashAnswer = (answer: string): string => {
 // Pre-computed hashes for the answers
 export const ANSWER_HASHES = {
   question1: "-pf2tqc", // SNOWFLAKE
-  question2: "1lrklv"   // CAROL
+  question2: "1lrklv",  // CAROL
+  question3: "1ygp39sy", // BINARY BLIZZARD
+  question4: "-h7zj3i", // CLAUSECODE
+  question5: "-q5xmxs", // DEBUGGLE
+  question6: "2n4jc",   // NOEL
+  question7: "-1b60nva", // YEAR OF THE HORSE
+  question8: "1mpk28",  // EGGNOG
+  question9: "-swxgze"  // PAKHLAVA
 };
 
 export const checkAnswer = (userAnswer: string, questionKey: keyof typeof ANSWER_HASHES): boolean => {

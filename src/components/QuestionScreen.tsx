@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import QuizCard from "./QuizCard";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { checkAnswer } from "@/lib/hashAnswer";
+import { checkAnswer, ANSWER_HASHES } from "@/lib/hashAnswer";
 import { CheckCircle, XCircle } from "lucide-react";
 
 interface QuestionScreenProps {
   questionNumber: number;
   riddle: string;
-  questionKey: "question1" | "question2";
+  questionKey: keyof typeof ANSWER_HASHES;
   onCorrect: () => void;
 }
 
@@ -40,7 +40,7 @@ const QuestionScreen = ({ questionNumber, riddle, questionKey, onCorrect }: Ques
     <QuizCard>
       <div className="text-center">
         <span className="inline-block px-4 py-1 rounded-full bg-secondary text-secondary-foreground text-sm font-body mb-4">
-          Riddle {questionNumber} of 2
+          Riddle {questionNumber} of 9
         </span>
         
         <h2 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-8 leading-relaxed">
