@@ -22,7 +22,7 @@ const WelcomeScreen = ({
           <Snowflake className="w-16 h-16 text-ice" />
         </motion.div>
         
-        <h1 className="font-display text-4xl md:text-5xl font-bold text-gradient mb-4">206 Holiday Escape Game</h1>
+        <h1 className="font-display text-4xl md:text-5xl font-bold text-gradient mb-4">Qwasar Holiday Escape Game</h1>
         
         <p className="text-muted-foreground text-lg mb-6 font-body">
           Embark on a magical journey through the winter wonderland. 
