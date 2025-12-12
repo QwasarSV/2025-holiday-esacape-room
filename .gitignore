@@ -37,6 +37,9 @@ Thumbs.db
 .env.test.local
 .env.production.local
 
+# Documentation files
+*.md
+
 # Misc local state
 *.pid
 *.seed
