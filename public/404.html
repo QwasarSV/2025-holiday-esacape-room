@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting…</title>
+    <script>
+      (function () {
+        // Compute base path (GitHub Pages project sites live at /<repo>/).
+        var segments = window.location.pathname.split("/").filter(Boolean);
+        var base = segments.length > 0 ? "/" + segments[0] + "/" : "/";
+        var redirectPath =
+          window.location.pathname +
+          window.location.search +
+          window.location.hash;
+
+        try {
+          sessionStorage.setItem("redirectPath", redirectPath);
+        } catch (e) {
+          // Ignore storage issues; user will land at the base route.
+        }
+
+        window.location.replace(base);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
