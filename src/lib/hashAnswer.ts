@@ -12,8 +12,8 @@ export const hashAnswer = (answer: string): string => {
 
 // Pre-computed hashes for the answers
 export const ANSWER_HASHES = {
-  question1: "-1m73z9d", // SNOWFLAKE
-  question2: "-1fz1aw"   // CAROL
+  question1: "-pf2tqc", // SNOWFLAKE
+  question2: "1lrklv"   // CAROL
 };
 
 export const checkAnswer = (userAnswer: string, questionKey: keyof typeof ANSWER_HASHES): boolean => {
