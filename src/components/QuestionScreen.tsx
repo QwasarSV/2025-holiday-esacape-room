@@ -17,11 +17,15 @@ const QuestionScreen = ({ questionNumber, riddle, questionKey, onCorrect }: Ques
   const [answer, setAnswer] = useState("");
   const [feedback, setFeedback] = useState<"correct" | "incorrect" | null>(null);
   const [shake, setShake] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting || feedback === "correct") return;
     
-    if (checkAnswer(answer, questionKey)) {
+    setIsSubmitting(true);
+    
+    if (await checkAnswer(answer, questionKey)) {
       setFeedback("correct");
       setTimeout(() => {
         onCorrect();
@@ -34,6 +38,8 @@ const QuestionScreen = ({ questionNumber, riddle, questionKey, onCorrect }: Ques
         setFeedback(null);
       }, 1500);
     }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -66,7 +72,7 @@ const QuestionScreen = ({ questionNumber, riddle, questionKey, onCorrect }: Ques
             type="submit"
             size="lg"
             className="w-full font-body text-lg py-6 glow-gold"
-            disabled={!answer.trim() || feedback === "correct"}
+            disabled={!answer.trim() || feedback === "correct" || isSubmitting}
           >
             Submit Answer
           </Button>
